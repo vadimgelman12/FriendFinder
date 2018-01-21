@@ -13,6 +13,8 @@ var PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.use(express.static(__dirname +'/public'));
+
 
 var apiRoutes = require('./apiRoutes.js'); 
 var htmlRoutes = require('./htmlRoutes.js');
@@ -20,14 +22,6 @@ var htmlRoutes = require('./htmlRoutes.js');
 apiRoutes(app);
 htmlRoutes(app);
 
-
-// app.get("/", function(req, res) {
-//   res.sendFile(path.join(__dirname, "home.html"));
-// });
-
-// app.get("/survey", function(req, res) {
-//   res.sendFile(path.join(__dirname, "survey.html"));
-// });
 
 // Starts the server to begin listening
 // =============================================================

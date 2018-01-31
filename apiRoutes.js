@@ -53,7 +53,7 @@ module.exports = function(app){
 
 		//console.log(myMatch.name);
 
-		friends.push(userData);
+		//friends.push(userData);
  
 		res.json(myMatch);
 	});

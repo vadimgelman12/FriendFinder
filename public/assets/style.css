@@ -1,3 +1,23 @@
-h1,h2,h3,h4,a{
+h4{
   color:white;
+}
+
+h3{
+  color:white;
+}
+
+a{
+  color:white;
+}
+
+.modal-body {
+  background-image: url("https://s3.envato.com/files/230029431/Neon%20Stars%20Background.jpg");
+}
+
+#matchName{
+  color:white;
+}
+
+.fb-share{
+  width:26%;
 }

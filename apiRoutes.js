@@ -24,6 +24,8 @@ module.exports = function(app){
 		var userData 	= req.body;
 		var userName 	= userData.name;
 		var userImage 	= userData.image;
+		// var userName = "";
+		// var userImage = "";
 		var userScores 	= userData.scores;
 
 		var totalDifference = 0;
